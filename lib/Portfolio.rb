@@ -1,3 +1,5 @@
+require pry
+
 class InvalidType < StandardError; end
 
 class Portfolio
@@ -7,6 +9,7 @@ class Portfolio
     @@all = []
 
     def initialize(name)
+        binding.pry
         @name = name
         @stocks =[]
         save
@@ -40,6 +43,8 @@ class Portfolio
         end
         total
     end
+
+
     
     #stores an array of included stocks in a given portfolio
     #aggregates the value of the portfolio based on the number of each stock and their values.

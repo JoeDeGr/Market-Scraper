@@ -40,6 +40,23 @@ class Stock
         total = self.value * self.shares 
     end
 
+    def self.find_or_create_stock_from_symbol(symbol)
+        if self.find_by_symbol(symbol)
+        else
+            self.create
+        end
+    end
+
+    def self.find_by_symbol(symbol)
+        self.all.find( |i| i.symbol = symbol)
+    end
+
+    def create 
+        
+
+
+
+
 
 
 # will store the stock and relevant information
