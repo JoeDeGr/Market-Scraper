@@ -1,5 +1,7 @@
-require "bundler/setup"
-require "MarketScraper"
-require 'pry'
+#!/usr/bin/env ruby
 
-Scraper.new("^Gspc")
+def start
+puts "Hello World!"
+puts ""
+puts "How may we be of assistance today?" 
+
