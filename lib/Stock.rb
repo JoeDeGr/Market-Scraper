@@ -1,6 +1,6 @@
 class Stock
 
-    attr_acessor :name, :symbol, :value, :shares
+    attr_acessor :name, :symbol, :value, :shares, :portfolio
 
     @@all =[]
 
@@ -22,13 +22,21 @@ class Stock
     end
 
 
-    def total_value
-        total = self.value * self.shares
-        total
+#will send the created stock to the portfolio class
+
+    def add_to_portfolio(portfolio_name)
+        portfolio_name.add_stock(self)
     end
 
+    def self.clear_all
+        @@all.clear 
+    end
 
-#will send the created stock to the portfolio class
+    def total_value 
+        total = self.value * self.shares 
+    end
+    
+
 
 # will store the stock and relevant information
 

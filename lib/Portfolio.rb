@@ -9,6 +9,15 @@ class Portfolio
     def initialize(name)
         @name = name
         @stocks =[]
+        save
+    end
+
+    def save 
+        @@all << self
+    end
+
+    def self.clear_all 
+        @@all.clear 
     end
 
     def add_stock(stock)
@@ -31,13 +40,8 @@ class Portfolio
         end
         total
     end
-
-
     
-
     #stores an array of included stocks in a given portfolio
     #aggregates the value of the portfolio based on the number of each stock and their values.
-
-
 
 end
