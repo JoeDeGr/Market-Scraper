@@ -6,16 +6,16 @@ Gem::Specification.new do |spec|
   spec.authors       = ["JoeDeGr"]
   spec.email         = ["DeGregorio.Joseph@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{"A gem that tetrieves market data on a given stock and adds it to a portfolio".}
+  spec.description   = %q{"The Gem Retrieves data from Yahoo Finance on a given stock symbol and adds the given number of shares adds the value to a portfolio of stocks."}
+  spec.homepage      = "https://github.com/JoeDeGr/Market-Scraper"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
   spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/JoeDeGr/Market-Scraper"
+  spec.metadata["source_code_uri"] ="https://github.com/JoeDeGr/Market-Scraper"
   spec.metadata["changelog_uri"] = "https://github.com/JoeDeGr/Market-Scraper"
 
   # Specify which files should be added to the gem when it is released.

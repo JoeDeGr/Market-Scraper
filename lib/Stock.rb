@@ -21,6 +21,10 @@ class Stock
         @@all
     end
 
+    def get_info
+        Scraper.new(symbol)
+    end
+
 
 #will send the created stock to the portfolio class
 
@@ -35,7 +39,7 @@ class Stock
     def total_value 
         total = self.value * self.shares 
     end
-    
+
 
 
 # will store the stock and relevant information

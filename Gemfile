@@ -7,5 +7,5 @@ gem "rake", "~> 12.0"
 gem "rspec", "~> 3.0"
 gem 'pry'
 gem 'require_all'
-gem 'Nokogiri'
+gem 'nokogiri'
 
