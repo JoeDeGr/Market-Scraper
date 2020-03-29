@@ -1,4 +1,5 @@
 class Stock
+    extend MarketScraper
 
     attr_acessor :name, :symbol, :value, :shares, :portfolio
 
@@ -50,14 +51,6 @@ class Stock
     def self.find_by_symbol(symbol)
         self.all.find( |i| i.symbol = symbol)
     end
-
-    def create 
-        
-
-
-
-
-
 
 # will store the stock and relevant information
 

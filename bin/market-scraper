@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
+require "bundler/setup"
 
-class MarketScraper
     def start
       puts "Hello World!"
       puts "-----------------"
@@ -27,5 +27,5 @@ class MarketScraper
           end
       end
   end
-end
-start
+
+start 

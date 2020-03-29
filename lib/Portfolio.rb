@@ -1,8 +1,7 @@
 require pry
 
-class InvalidType < StandardError; end
-
 class Portfolio
+    extend MarketScraper
     attr accessor :name, :value
     attr_reader :stocks
 

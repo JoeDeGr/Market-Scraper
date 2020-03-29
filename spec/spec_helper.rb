@@ -1,6 +1,5 @@
 require "bundler/setup"
 require "MarketScraper"
-require_all 'lib'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
